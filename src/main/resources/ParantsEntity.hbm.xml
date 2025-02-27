@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.test2.DAO.ParantsEntity" table="parants" schema="public" catalog="rpdb_lab1">
+        <id name="pId">
+            <column name="p_id" sql-type="integer"/>
+        </id>
+        <property name="pSurname">
+            <column name="p_surname" sql-type="varchar" not-null="true"/>
+        </property>
+        <property name="pFirstName">
+            <column name="p_first_name" sql-type="varchar" not-null="true"/>
+        </property>
+        <property name="pSurname2">
+            <column name="p_surname_2" sql-type="varchar" not-null="true"/>
+        </property>
+        <property name="pAddressId">
+            <column name="p_address_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="pStatus">
+            <column name="p_status" sql-type="varchar" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

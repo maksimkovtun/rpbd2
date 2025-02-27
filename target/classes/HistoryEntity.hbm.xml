@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.test2.DAO.HistoryEntity" table="history" schema="public" catalog="rpdb_lab1">
+        <id name="id">
+            <column name="id" sql-type="integer"/>
+        </id>
+        <property name="action">
+            <column name="_action" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="time">
+            <column name="_time" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="210" prefWidth="220" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.AppController">
+
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <VBox alignment="CENTER" spacing="10">
+      <Label fx:id="statusLabel" text="★">
+         <graphic>
+            <Button mnemonicParsing="false" onAction="#reConnect" text="RC" />
+         </graphic></Label>
+        <Button fx:id="reConnectButton" onAction="#addWindow" text="Добавить данные" />
+        <Button onAction="#delWindow" text="Удалить данные" />
+        <Button onAction="#updWindow" text="Изменить данные" />
+        <Button onAction="#selWindow" text="Просмотреть данные" />
+        <Button onAction="#serWindow" text="Поиск" />
+    </VBox>
+</StackPane>

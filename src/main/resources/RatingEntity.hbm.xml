@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.test2.DAO.RatingEntity" table="rating" schema="public" catalog="rpdb_lab1">
+        <id name="rId">
+            <column name="r_id" sql-type="integer"/>
+        </id>
+        <property name="rYear">
+            <column name="r_year_" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rClassId">
+            <column name="r_class_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rSubjectId">
+            <column name="r_subject_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rPointQuarter">
+            <column name="r_point_quarter" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rPointPartYear">
+            <column name="r_point_part_year" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rPointYear">
+            <column name="r_point_year" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rPointExam">
+            <column name="r_point_exam" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="rPointEnd">
+            <column name="r_point_end" sql-type="integer" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

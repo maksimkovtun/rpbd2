@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.test2.DAO.SchoolboyEntity" table="schoolboy" schema="public" catalog="rpdb_lab1">
+        <id name="sId">
+            <column name="s_id" sql-type="integer"/>
+        </id>
+        <property name="sPId">
+            <column name="s_p_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="sRId">
+            <column name="s_r_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="sSurname">
+            <column name="s_surname" sql-type="varchar" not-null="true"/>
+        </property>
+        <property name="sFirstName">
+            <column name="s_first_name" sql-type="varchar" not-null="true"/>
+        </property>
+        <property name="sSurname2">
+            <column name="s_surname_2" sql-type="varchar" not-null="true"/>
+        </property>
+        <property name="sAddressId">
+            <column name="s_address_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="sBirthDate">
+            <column name="s_birth_date" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="sClassId">
+            <column name="s_class_id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="sAdmYear">
+            <column name="s_adm_year" sql-type="integer" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

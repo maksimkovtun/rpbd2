@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.Controllers.selResultController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <TextArea fx:id="result" prefHeight="400.0" prefWidth="600.0" editable="false" />
+      <Button fx:id="selResButton" layoutX="574.0" layoutY="-25.0" mnemonicParsing="false" onAction="#selResButton" prefHeight="3.0" prefWidth="0.0" text=" " visible="false"/>
+   </children>
+</AnchorPane>
